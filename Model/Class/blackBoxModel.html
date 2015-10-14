@@ -1,0 +1,54 @@
+<!-- developed by Leif Christiansen -->
+<!-- I501 Fall 2015                 -->
+<!-- leifchri@iu.edu                -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Black Box Model</title>
+        <script id="vertex-shader" type="x-shader/x-vertex">
+            attribute vec4 vPosition;
+
+            void
+            main()
+            {
+                gl_Position = vPosition;
+                gl_PointSize = 20.0;
+            }
+        </script>
+
+        <script id="fragment-shader" type="x-shader/x-fragment">
+            precision mediump float;
+
+            uniform vec4 uColor;
+
+            void
+            main()
+            {
+    	            gl_FragColor = uColor;
+            }
+        </script>
+
+        <script type="text/javascript" src="../Common/webgl-utils.js"></script>
+        <script type="text/javascript" src="../Common/initShaders.js"></script>
+        <script type="text/javascript" src="../Common/MV.js"></script>
+        <script type="text/javascript" src="blackBoxModel.js"></script>
+        <script type="text/javascript" language="Javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <h1>Black Box</h1>
+        <canvas id="gl-canvas" width="512" height="512">
+        Oops ... your browser doesn't support the HTML5 canvas element
+        </canvas>
+        <hr />
+        n: <input id="nStep" type="text" name="n" value="1"></input>
+        <input type="button" value = "Next n Step" onClick = "step_it()">
+        <input type="button" value = "Revert" onClick = "revert()">
+        <input type="button" value = "Reset" onClick = "reset()"><br />
+        <hr />
+        <div id="current-step">Current step: 0</div>
+        <div id="debug-label">A model of the Black Box -- I501 Fall 2015</div>
+    </body>
+</html>
