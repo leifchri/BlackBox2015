@@ -7,7 +7,11 @@ The Black Box may be found here: http://www.informatics.indiana.edu/rocha/blackb
 
 File Descriptions
 ---------------------------------------------------
-___scripts___
+___Model___
+*****************************************************
+A partially functional model Black Box. Can be viewed here: http://cgi.soic.indiana.edu/~leifchri/labs/Class/blackBoxModel.html
+
+___Scripts___
 ******************************************************
 
 __scraperByQuad__: Opens a firefox window and automatically steps through the Black Box. The states of the Black Box are recorded in .txt files
@@ -15,10 +19,6 @@ __scraperByQuad__: Opens a firefox window and automatically steps through the Bl
 __hypTest.py__: An earlier version of scraperByQuad. Performs various tests on Q4 while gathering data.
 
 __mutations.py__: Reads files created by scraperByQuad performs. Has functions for performing a variety of tests, printing states of the Black Box, and creating networks visualizing the Black Box's changes.
-
-___model___
-*****************************************************
-A partially functional model Black Box. Can be viewed here: http://cgi.soic.indiana.edu/~leifchri/labs/Class/blackBoxModel.html
 
 Dependencies
 --------------------------------------------------
