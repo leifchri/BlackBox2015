@@ -27,6 +27,6 @@ __Mozilla Firefox__
 __Python Libraries__:
 Numpy, Selenuim, Pandas, NetworkX, BeautifulSoup
 
-If you are missing any of these files in the terminal type:
+If you are missing any of these libraries, in the terminal type:
 
     pip install (name_of_dependecy)
