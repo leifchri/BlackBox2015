@@ -1,0 +1,52 @@
+Reading C:\Users\Leif Christiansen\Documents\BlackBox\scripts\TestFiles\BBTestQ2_1x1000.txt
+Total # of changes: 181
+2 -->
+[0]: 0.42 [4]: 0.12 [6]: 0.31 [8]: 0.15
+Reading C:\Users\Leif Christiansen\Documents\BlackBox\scripts\TestFiles\BBTestQ2_1x1000_1.txt
+Total # of changes: 159
+2 -->
+[0]: 0.59 [4]: 0.14 [6]: 0.14 [8]: 0.14
+Reading C:\Users\Leif Christiansen\Documents\BlackBox\scripts\TestFiles\BBTestQ2_1x1000_2015-09-28_20-36.txt
+Total # of changes: 162
+2 -->
+[0]: 0.33 [4]: 0.17 [6]: 0.12 [8]: 0.38
+Reading C:\Users\Leif Christiansen\Documents\BlackBox\scripts\TestFiles\BBTestQ2_1x1000_2015-09-28_20-48.txt
+Total # of changes: 204
+2 -->
+[0]: 0.50 [4]: 0.22 [6]: 0.19 [8]: 0.09
+Reading C:\Users\Leif Christiansen\Documents\BlackBox\scripts\TestFiles\BBTestQ2_1x1000_2015-10-02_15-43.txt
+Total # of changes: 165
+2 -->
+[0]: 0.62 [4]: 0.25 [6]: 0.04 [8]: 0.08
+Reading C:\Users\Leif Christiansen\Documents\BlackBox\scripts\TestFiles\BBTestQ2_1x1000_2015-10-03_15-59.txt
+Total # of changes: 160
+2 -->
+[0]: 0.55 [4]: 0.17 [6]: 0.24 [8]: 0.03
+Reading C:\Users\Leif Christiansen\Documents\BlackBox\scripts\TestFiles\BBTestQ2_1x1000_2015-10-03_16-04.txt
+Total # of changes: 173
+2 -->
+[0]: 0.54 [4]: 0.25 [6]: 0.00 [8]: 0.21
+Reading C:\Users\Leif Christiansen\Documents\BlackBox\scripts\TestFiles\BBTestQ2_1x1000_2015-10-03_16-08.txt
+Total # of changes: 178
+2 -->
+[0]: 0.38 [4]: 0.31 [6]: 0.17 [8]: 0.14
+Reading C:\Users\Leif Christiansen\Documents\BlackBox\scripts\TestFiles\BBTestQ2_1x1000_2015-10-03_16-13.txt
+Total # of changes: 166
+2 -->
+[0]: 0.72 [4]: 0.16 [6]: 0.08 [8]: 0.04
+Reading C:\Users\Leif Christiansen\Documents\BlackBox\scripts\TestFiles\BBTestQ2_1x1000_2015-10-03_16-17.txt
+Total # of changes: 156
+2 -->
+[0]: 0.44 [4]: 0.07 [6]: 0.15 [8]: 0.33
+Reading C:\Users\Leif Christiansen\Documents\BlackBox\scripts\TestFiles\BBTestQ2_1x1000_2015-10-03_16-23.txt
+Total # of changes: 155
+2 -->
+[0]: 0.50 [4]: 0.21 [6]: 0.07 [8]: 0.21
+Reading C:\Users\Leif Christiansen\Documents\BlackBox\scripts\TestFiles\BBTestQ2_1x1000_2015-10-03_16-28.txt
+Total # of changes: 144
+2 -->
+[0]: 0.50 [4]: 0.30 [6]: 0.15 [8]: 0.05
+Reading C:\Users\Leif Christiansen\Documents\BlackBox\scripts\TestFiles\BBTestQ2_1x1000_2015-10-03_16-32.txt
+Total # of changes: 195
+2 -->
+[0]: 0.62 [4]: 0.16 [6]: 0.14 [8]: 0.08

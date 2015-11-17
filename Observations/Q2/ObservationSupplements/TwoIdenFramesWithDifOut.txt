@@ -1,0 +1,86 @@
+Reading C:\Users\Leif Christiansen\Documents\BlackBox\scripts\TestFiles\BBTestQ2_1x1000_2015-10-03_16-28.txt
+Total Sum: 2.0 numCount: 1
+Step: 789
+2  changed to  0 at row: 8 col: 6
+--------------------------------------
+PRINTING the previous matrix
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  2  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+
+
+--------------------------------------
+PRINTING the current matrix
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+
+
+--------------------------------------
+Total # of changes: 144
+
+Last couple mutations:
+6  changed to  0  dif:  4
+8  changed to  0  dif:  2
+5  changed to  0  dif:  5
+2  changed to  4  dif:  2
+4  changed to  0  dif:  6
+2  changed to  0  dif:  8
+Total # of changes: 144
+
+Reading C:\Users\Leif Christiansen\Documents\BlackBox\scripts\TestFiles\BBTestQ2_1x1000_2015-09-28_20-36.txt
+Total Sum: 2.0 numCount: 1
+Step: 825
+2  changed to  6 at row: 9 col: 0
+--------------------------------------
+PRINTING the previous matrix
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 2  0  0  0  0  0  0  0  0  0 
+
+
+--------------------------------------
+PRINTING the current matrix
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 6  0  0  0  0  0  0  0  0  0 
+
+
+--------------------------------------
+Total # of changes: 162
+
+Last couple changes:
+5  changed to  0  dif:  5
+8  changed to  0  dif:  2
+6  changed to  2  dif:  6
+4  changed to  0  dif:  6
+2  changed to  6  dif:  4
+6  changed to  2  dif:  6

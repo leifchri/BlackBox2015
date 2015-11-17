@@ -1,0 +1,282 @@
+Reading C:\Users\Leif Christiansen\Documents\BlackBox\scripts\TestFiles\BBTestQ2_1x1000.txt
+Total # of changes: 181
+Reading C:\Users\Leif Christiansen\Documents\BlackBox\scripts\TestFiles\BBTestQ2_1x1000_1.txt
+Total # of changes: 159
+Reading C:\Users\Leif Christiansen\Documents\BlackBox\scripts\TestFiles\BBTestQ2_1x1000_2015-09-28_20-36.txt
+Total # of changes: 162
+Reading C:\Users\Leif Christiansen\Documents\BlackBox\scripts\TestFiles\BBTestQ2_1x1000_2015-09-28_20-48.txt
+Total # of changes: 204
+Reading C:\Users\Leif Christiansen\Documents\BlackBox\scripts\TestFiles\BBTestQ2_1x1000_2015-10-02_15-43.txt
+Total # of changes: 165
+Reading C:\Users\Leif Christiansen\Documents\BlackBox\scripts\TestFiles\BBTestQ2_1x1000_2015-10-03_15-59.txt
+Total Sum: 21.0 numCount: 4
+Step: 586
+2  changed to  4 at row: 2 col: 4
+--------------------------------------
+PRINTING the previous matrix
+ 0  0  0  0  4  0  0  0  0  7 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  2  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  8  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+
+
+--------------------------------------
+PRINTING the current matrix
+ 0  0  0  0  4  0  0  0  0  7 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  4  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  8  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+
+
+--------------------------------------
+Total # of changes: 160
+Reading C:\Users\Leif Christiansen\Documents\BlackBox\scripts\TestFiles\BBTestQ2_1x1000_2015-10-03_16-04.txt
+Total # of changes: 173
+Reading C:\Users\Leif Christiansen\Documents\BlackBox\scripts\TestFiles\BBTestQ2_1x1000_2015-10-03_16-08.txt
+Total Sum: 183.0 numCount: 41
+Step: 194
+2  changed to  4 at row: 0 col: 5
+--------------------------------------
+PRINTING the previous matrix
+ 8  0  0  0  0  2  0  0  2  0 
+ 0  0  2  0  0  0  0  0  0  0 
+ 0  6  1  0  0  0  6  0  7  7 
+ 0  0  0  3  0  0  2  0  6  8 
+ 5  1  4  0  2  1  1  5  0  8 
+ 0  7  0  0  2  0  0  0  9  8 
+ 0  2  0  8  8  3  0  2  0  0 
+ 0  0  2  0  0  1  0  0  0  0 
+ 0  0  6  4  6  2  5  0  0  7 
+ 0  0  0  0  0  0  0  4  4  6 
+
+
+--------------------------------------
+PRINTING the current matrix
+ 8  0  0  0  0  4  0  0  2  0 
+ 0  0  2  0  0  0  0  0  0  0 
+ 0  6  1  0  0  0  6  0  7  7 
+ 0  0  0  3  0  0  2  0  6  8 
+ 5  1  4  0  2  1  1  5  0  8 
+ 0  7  0  0  2  0  0  0  9  8 
+ 0  2  0  8  8  3  0  2  0  0 
+ 0  0  2  0  0  1  0  0  0  0 
+ 0  0  6  4  6  2  5  0  0  7 
+ 0  0  0  0  0  0  0  4  4  6 
+
+
+--------------------------------------
+Total Sum: 40.0 numCount: 10
+Step: 414
+2  changed to  4 at row: 4 col: 4
+--------------------------------------
+PRINTING the previous matrix
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  2  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  6 
+ 5  0  0  0  2  0  1  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  8  0  0  0  2  0  0 
+ 0  0  0  0  0  8  0  0  0  0 
+ 0  0  4  2  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+
+
+--------------------------------------
+PRINTING the current matrix
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  2  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  6 
+ 5  0  0  0  4  0  1  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  8  0  0  0  2  0  0 
+ 0  0  0  0  0  8  0  0  0  0 
+ 0  0  4  2  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+
+
+--------------------------------------
+Total # of changes: 178
+Reading C:\Users\Leif Christiansen\Documents\BlackBox\scripts\TestFiles\BBTestQ2_1x1000_2015-10-03_16-13.txt
+Total Sum: 16.0 numCount: 4
+Step: 473
+2  changed to  4 at row: 8 col: 1
+--------------------------------------
+PRINTING the previous matrix
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  6  7  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  1  0  0  0  0  0  0 
+ 0  2  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+
+
+--------------------------------------
+PRINTING the current matrix
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  6  7  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  1  0  0  0  0  0  0 
+ 0  4  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+
+
+--------------------------------------
+Total # of changes: 166
+Reading C:\Users\Leif Christiansen\Documents\BlackBox\scripts\TestFiles\BBTestQ2_1x1000_2015-10-03_16-17.txt
+Total # of changes: 156
+Reading C:\Users\Leif Christiansen\Documents\BlackBox\scripts\TestFiles\BBTestQ2_1x1000_2015-10-03_16-23.txt
+Total Sum: 61.0 numCount: 11
+Step: 420
+2  changed to  4 at row: 2 col: 9
+--------------------------------------
+PRINTING the previous matrix
+ 0  0  0  7  0  0  0  0  0  0 
+ 0  6  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  2 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  6  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  5  8 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  7  0  0  0  8  0  0  0  0 
+ 0  5  0  2  0  0  5  0  0  0 
+
+
+--------------------------------------
+PRINTING the current matrix
+ 0  0  0  7  0  0  0  0  0  0 
+ 0  6  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  4 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  6  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  5  8 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  7  0  0  0  8  0  0  0  0 
+ 0  5  0  2  0  0  5  0  0  0 
+
+
+--------------------------------------
+Total Sum: 53.0 numCount: 9
+Step: 452
+2  changed to  4 at row: 9 col: 3
+--------------------------------------
+PRINTING the previous matrix
+ 0  0  0  7  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  6  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  5  8 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  7  0  0  0  8  0  0  0  0 
+ 0  5  0  2  0  0  5  0  0  0 
+
+
+--------------------------------------
+PRINTING the current matrix
+ 0  0  0  7  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  6  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  5  8 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  7  0  0  0  8  0  0  0  0 
+ 0  5  0  4  0  0  5  0  0  0 
+
+
+--------------------------------------
+Total # of changes: 155
+Reading C:\Users\Leif Christiansen\Documents\BlackBox\scripts\TestFiles\BBTestQ2_1x1000_2015-10-03_16-28.txt
+Total Sum: 4.0 numCount: 2
+Step: 499
+2  changed to  4 at row: 5 col: 8
+--------------------------------------
+PRINTING the previous matrix
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  2  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  2  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+
+
+--------------------------------------
+PRINTING the current matrix
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  4  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  2  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+
+
+--------------------------------------
+Total # of changes: 144
+Reading C:\Users\Leif Christiansen\Documents\BlackBox\scripts\TestFiles\BBTestQ2_1x1000_2015-10-03_16-32.txt
+Total Sum: 51.0 numCount: 10
+Step: 481
+2  changed to  4 at row: 9 col: 2
+--------------------------------------
+PRINTING the previous matrix
+ 0  0  0  0  0  4  0  0  0  0 
+ 0  0  0  0  8  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 4  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 2  0  0  0  0  0  0  0  0  0 
+ 0  6  0  0  6  0  0  0  0  6 
+ 0  0  0  0  8  0  0  0  0  0 
+ 0  0  2  0  0  0  0  0  5  0 
+
+
+--------------------------------------
+PRINTING the current matrix
+ 0  0  0  0  0  4  0  0  0  0 
+ 0  0  0  0  8  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 4  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0 
+ 2  0  0  0  0  0  0  0  0  0 
+ 0  6  0  0  6  0  0  0  0  6 
+ 0  0  0  0  8  0  0  0  0  0 
+ 0  0  4  0  0  0  0  0  5  0 
+
+
+--------------------------------------
+Total # of changes: 195

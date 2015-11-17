@@ -1,0 +1,76 @@
+The early, middle, and late behavior have different appearences...
+Early: I have no idea...this seems like the key one to reproduce
+Middle: Blocks of color develop
+	Go black from the edges (?)
+Late: Blocks stabilize and slowly die out. Converges to all black except a white rectangle at coords:
+	(4,5),(4,6) , (4,8),(5,8) , (7,5),(7,6) , (7,3),(6,3)
+White behaves differently than the other colors
+	Extends in lines towards the rectangle points
+	(Probably) can go to any color but almost always goes to black
+Mutates much slower than other Qs
+	    Test File		              # of mutations
+	BBTestQ_1x1000.txt:                  704, 181, 147, 839
+	BBTestQ_1x1000_1.txt:                760, 159, 117, 823
+	BBTestQ_1x1000_2015-09-28_20-36.txt: 737, 162, 128, 791
+	BBTestQ_1x1000_2015-09-28_20-48.txt: 736, 204, 130, 849
+	This implies that a pixel choses at random is very likely to stay the same color
+Black can go to any color but it is more likely to go to White than anything else
+	See *_fromBlack.png
+	The least pronounced test of this was 50% to White and 50% to other
+	This seems the result of other rules, not a rule unto itself
+	Black -> White when White is traveling to rectangle points but...
+	What circumstances can a black go to not White?
+		Mostly seems the same as any other color but there are anomolies
+		From BBTestQ3_1x1000_1:
+		--------------------------------------
+		0  changed to  6 at row: 8 col: 0
+		PRINTING the previous matrix
+		 [ 1.  1.  9.  9.  0.  0.  0.  0.  0.  0.]
+		 [ 0.  8.  8.  6.  6.  6.  0.  8.  0.  0.]
+		 [ 0.  8.  8.  6.  6.  6.  6.  0.  0.  0.]]
+		--------------------------------------
+		PRINTING the current matrix
+		 [ 1.  1.  9.  9.  0.  0.  0.  0.  0.  0.]
+		 [ 6.  8.  8.  6.  6.  6.  0.  8.  0.  0.]
+		 [ 0.  8.  8.  6.  6.  6.  6.  0.  0.  0.]]
+		--------------------------------------
+		0  changed to  8 at row: 9 col: 3
+		PRINTING the previous matrix
+		 [ 7.  0.  8.  6.  9.  9.  2.  7.  8.  5.]
+		 [ 6.  9.  1.  0.  7.  1.  7.  8.  7.  0.]]
+		--------------------------------------
+		PRINTING the current matrix
+		 [ 7.  0.  8.  6.  9.  9.  2.  7.  8.  5.]
+		 [ 6.  9.  1.  8.  7.  1.  7.  8.  7.  0.]]
+		--------------------------------------
+		But the anomolies are only present in this one file...could be recording error. [Not an error, colors can "spontaneously" appear]
+	In general it seems colors change to match the color of shared edges (Not true in beginning!!!) 
+	The most common mutation, by a good amount, is a color mutating to Black
+What are the conditions for going to Black?
+	pixel + (sum of adj.)%10 [Nope]
+	no common factor among adjacent pixels [Nope]
+	pixel has no common factor with adjacent pixels [Nope, otherwise color blocks would never go black]
+	if there are adjacent black -> go black [Nope]
+	doesn't need to have an adjacent black [Yup]
+	does black behave the same as every other color?
+Can a pixel change to a color that it does not share an edge with?
+	Yes, see Spontaneous_Mutations.txt
+	Often times there was a diagonal pixel of the same color, but not always
+	Keep track of steps, maybe these mutations occur only early and then the blocking behavior really takes hold [Nope, they can occur whenever]
+Any color can change to any other color
+When changing a pixel...
+	Is a new color calculated based on the adjacent? adjacent and diagonal? both of these and the actual color of the pixel?
+	What ever it is, the colors of adjacent pixels are more likely
+	So what calculations can account for this increased likelyhood while allowing for any mutation to occur?
+		Common factor [This wouldn't work, too many prime numbers]
+	floor(avg of adj pixels) [Nope]
+	Does the avg have any correlation? [Only slightly, I think it's a result of adjacent colors being more common]
+Maybe examing the cases when a color changes to somethin not adjacent could help...
+	Didn't get any ideas
+Examing only when a color mutates to 3
+Does white always extend in the direction of the rectangle?
+	[Unclear] If by normal rules a pixel can go to white, results are inconclusive
+	But it does seem that white displays distinct behavior, at least in the late stages, in creating the rectangle
+Can a color block extend in any direction?
+	[Yes], may imply that all adj pixels are taken into account when mutating
+There is no (easily) observable correllation between certain numbers being adjacent and a new color besides the one already stated

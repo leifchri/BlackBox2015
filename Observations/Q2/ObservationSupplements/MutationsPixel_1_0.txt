@@ -1,0 +1,49 @@
+The mutations of the pixel in the top left corner of the BB.
+
+Reading C:\Users\Leif Christiansen\Documents\BlackBox\scripts\TestFiles\BBTestQ2_1x1000.txt
+6  changed to  8
+8  changed to  2
+2  changed to  6
+6  changed to  0
+Total # of changes: 181
+Reading C:\Users\Leif Christiansen\Documents\BlackBox\scripts\TestFiles\BBTestQ2_1x1000_1.txt
+8  changed to  2
+2  changed to  0
+Total # of changes: 159
+Reading C:\Users\Leif Christiansen\Documents\BlackBox\scripts\TestFiles\BBTestQ2_1x1000_2015-09-28_20-36.txt
+3  changed to  4
+4  changed to  0
+Total # of changes: 162
+Reading C:\Users\Leif Christiansen\Documents\BlackBox\scripts\TestFiles\BBTestQ2_1x1000_2015-09-28_20-48.txt
+1  changed to  9
+9  changed to  0
+Total # of changes: 204
+Reading C:\Users\Leif Christiansen\Documents\BlackBox\scripts\TestFiles\BBTestQ2_1x1000_2015-10-02_15-43.txt
+4  changed to  0
+Total # of changes: 165
+Reading C:\Users\Leif Christiansen\Documents\BlackBox\scripts\TestFiles\BBTestQ2_1x1000_2015-10-03_15-59.txt
+4  changed to  2
+2  changed to  0
+Total # of changes: 160
+Reading C:\Users\Leif Christiansen\Documents\BlackBox\scripts\TestFiles\BBTestQ2_1x1000_2015-10-03_16-04.txt
+Total # of changes: 173
+Reading C:\Users\Leif Christiansen\Documents\BlackBox\scripts\TestFiles\BBTestQ2_1x1000_2015-10-03_16-08.txt
+Total # of changes: 178
+Reading C:\Users\Leif Christiansen\Documents\BlackBox\scripts\TestFiles\BBTestQ2_1x1000_2015-10-03_16-13.txt
+4  changed to  0
+Total # of changes: 166
+Reading C:\Users\Leif Christiansen\Documents\BlackBox\scripts\TestFiles\BBTestQ2_1x1000_2015-10-03_16-17.txt
+2  changed to  8
+8  changed to  0
+Total # of changes: 156
+Reading C:\Users\Leif Christiansen\Documents\BlackBox\scripts\TestFiles\BBTestQ2_1x1000_2015-10-03_16-23.txt
+2  changed to  0
+Total # of changes: 155
+Reading C:\Users\Leif Christiansen\Documents\BlackBox\scripts\TestFiles\BBTestQ2_1x1000_2015-10-03_16-28.txt
+8  changed to  6
+6  changed to  8
+8  changed to  0
+Total # of changes: 144
+Reading C:\Users\Leif Christiansen\Documents\BlackBox\scripts\TestFiles\BBTestQ2_1x1000_2015-10-03_16-32.txt
+5  changed to  0
+Total # of changes: 195

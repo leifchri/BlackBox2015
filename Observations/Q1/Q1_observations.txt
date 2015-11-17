@@ -1,0 +1,19 @@
+Assignment 1
+-------------------------------------
+pixels mutate very often, there is almost a 75% chance that a pixel will mutate in a given step [see Q1_Total_Mutations]
+any color can go to any other color
+every color is most likely to change to Black or (second most?) Grey
+Black is by far most likely to go to Grey, second most likely to go to Blue or Purple
+Grey is most likely to go to Black, then Blue, then Cyan or Purple
+Blue is most likley to go to Black or Grey
+Cyan is most likely to go to Black or Grey
+Green is most likely to go to Black or Grey
+Red is most likely to go to Black or Grey
+Orange (seems) most likely to go to Black
+Pink is most likely to go to Black or Grey
+White is most likely to go to Black or Grey
+An adj group of all zero in the same position in Q1 can go to dif values [see All0]
+
+Assignment 2
+--------------------------------------------------
+Get probabilities for how likely each color is to go to each other color

@@ -1,0 +1,26 @@
+Reading C:\Users\Leif Christiansen\Documents\BlackBox\scripts\TestFiles\BBTestQ1_1x1000.txt
+Total # of changes: 704
+Reading C:\Users\Leif Christiansen\Documents\BlackBox\scripts\TestFiles\BBTestQ1_1x1000_1.txt
+Total # of changes: 760
+Reading C:\Users\Leif Christiansen\Documents\BlackBox\scripts\TestFiles\BBTestQ1_1x1000_2015-09-28_20-36.txt
+Total # of changes: 737
+Reading C:\Users\Leif Christiansen\Documents\BlackBox\scripts\TestFiles\BBTestQ1_1x1000_2015-09-28_20-48.txt
+Total # of changes: 736
+Reading C:\Users\Leif Christiansen\Documents\BlackBox\scripts\TestFiles\BBTestQ1_1x1000_2015-10-02_15-43.txt
+Total # of changes: 737
+Reading C:\Users\Leif Christiansen\Documents\BlackBox\scripts\TestFiles\BBTestQ1_1x1000_2015-10-03_15-59.txt
+Total # of changes: 721
+Reading C:\Users\Leif Christiansen\Documents\BlackBox\scripts\TestFiles\BBTestQ1_1x1000_2015-10-03_16-04.txt
+Total # of changes: 725
+Reading C:\Users\Leif Christiansen\Documents\BlackBox\scripts\TestFiles\BBTestQ1_1x1000_2015-10-03_16-08.txt
+Total # of changes: 713
+Reading C:\Users\Leif Christiansen\Documents\BlackBox\scripts\TestFiles\BBTestQ1_1x1000_2015-10-03_16-13.txt
+Total # of changes: 733
+Reading C:\Users\Leif Christiansen\Documents\BlackBox\scripts\TestFiles\BBTestQ1_1x1000_2015-10-03_16-17.txt
+Total # of changes: 749
+Reading C:\Users\Leif Christiansen\Documents\BlackBox\scripts\TestFiles\BBTestQ1_1x1000_2015-10-03_16-23.txt
+Total # of changes: 723
+Reading C:\Users\Leif Christiansen\Documents\BlackBox\scripts\TestFiles\BBTestQ1_1x1000_2015-10-03_16-28.txt
+Total # of changes: 755
+Reading C:\Users\Leif Christiansen\Documents\BlackBox\scripts\TestFiles\BBTestQ1_1x1000_2015-10-03_16-32.txt
+Total # of changes: 726
