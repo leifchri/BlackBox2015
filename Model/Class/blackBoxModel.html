@@ -36,19 +36,23 @@
         <script type="text/javascript" src="blackBoxModel.js"></script>
         <script type="text/javascript" language="Javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
     </head>
-
     <body>
         <h1>Black Box</h1>
         <canvas id="gl-canvas" width="512" height="512">
         Oops ... your browser doesn't support the HTML5 canvas element
         </canvas>
-        <hr />
-        n: <input id="nStep" type="text" name="n" value="1"></input>
-        <input type="button" value = "Next n Step" onClick = "step_it()">
+        <br />
+        <p>Run the Black Box manually. Must press enter to change n.</p>
+        n: <input id="nStep" type="text" name="n" value="1">
+        <input type="button" value = "Next n Step" onClick = "step_it()"> 
         <input type="button" value = "Revert" onClick = "revert()">
-        <input type="button" value = "Reset" onClick = "reset()"><br />
+        <input type="button" value = "Reset" onClick = "reset()">
         <hr />
-        <div id="current-step">Current step: 0</div>
-        <div id="debug-label">A model of the Black Box -- I501 Fall 2015</div>
+        <span style = "margin-right: 1cm;" id="current-step" >Current step: 0</span>
+        <span id="debug-label">A model of the Black Box -- I501 Fall 2015</span>
+        <hr />
+        <!--<p>Or ... Input a test file to test the model's output against the file.</p>
+        <input id="fileInput" type="file">
+        <pre id="fileDisplayArea"></pre>-->
     </body>
 </html>

@@ -56,7 +56,6 @@ def testHyp1(k):
             printMats(k)
             raw_input("press enter to continue")
 
-
 def testHyp2(k):
     #if ( (prev_mat[k[0]][k[1]] == 5) or ((prev_mat[k[0]][k[1]]%2) == 0) ):
     dif = int(current_mat[k[0]][k[1]]) - int(prev_mat[k[0]][k[1]])
@@ -132,9 +131,9 @@ def testHyp2(k):
         #    print st.replace(" *", "*")
         #raw_input('press enter to continue')
 
-count = []
+'''count = []
 for i in range(10):
-    count.append(0)
+    count.append(0)'''
 def testHyp3(k):
     oldC = prev_mat[k[0]][k[1]]
     newC = current_mat[k[0]][k[1]]
@@ -211,6 +210,40 @@ def testHyp3(k):
         printMats(k)
         raw_input("press any key to continue")'''
 
+def testHyp4(k):
+    oldC = prev_mat[k[0]][k[1]]
+    newC = current_mat[k[0]][k[1]]
+    flag = False
+
+    #(current_mat[k[0]+1][k[1]] != 0) and ((current_mat[k[0]+1][k[1]]%2) == 0)
+
+    if (newC == 6):
+        try:
+            if ((current_mat[k[0]+1][k[1]]%7) != 0):
+                flag = True
+        except:
+            pass
+        try:
+            if ((current_mat[k[0]-1][k[1]]%7) != 0):
+                flag = True
+        except:
+            pass
+        try:
+            if ((current_mat[k[0]][k[1]+1]%7) != 0):
+                flag = True
+        except:
+            pass
+        try:
+            if ((current_mat[k[0]][k[1]-1]%7) != 0):
+                flag = True
+        except:
+            pass
+
+        #print numStep, " ", flag
+        
+        if (flag == False):
+            printMats(k)
+
 def printMats(k):
         print "Step: " + str(numStep)
         print int(prev_mat[k[0]][k[1]]), " changed to ", int(current_mat[k[0]][k[1]]),
@@ -239,23 +272,39 @@ def printMats(k):
         print '\n'
         print '--------------------------------------'
 
-def printEdges():
+def printEdges(edges):
     # print the number of edges between i --> j
+
     p = 0
     for i in range(10):
+        total = 0
         print str(i) + "--> "
+        for j in range(10):
+            if (i != j):
+                total += 1.0*edges[p]
+                p += 1
+        p = p - 9
+        if (total == 0):
+            total = 1
         for j in range(10):
             if (i != j):
                 '''if (p0 < p1):
                     index = p0*9 + p1 - 1
                 else:
                     index = p0*9 + p1'''
-                print "[" + str(j) + "]" + ": ",
-                print ("%.2f" % (1.0*edges[p])),
+                to = str(j)
+                val = ("%.3f" % (1.0*edges[p]))
+                #print "[" + str(j) + "]" + ": ",
+                #print ("%.2f" % (1.0*edges[p])),
                 p += 1
+            else:
+                to = str(i)
+                val = ("%.3f" % (0))
+            print "[" + to + "]" + ": ",
+            print val,
         print
 
-def plotNetwork(show, save, test_file):  
+def plotNetwork(show, save, test_file, edges):  
     G = nx.DiGraph()
 
     p = 0
@@ -266,10 +315,12 @@ def plotNetwork(show, save, test_file):
             G.add_edge(str(i), str(j), weight = edges[p])
             p = p+1
     
-    vert = '9'
+    #vert = '9'
+    #if (int(u)%2 == 1) and (d['weight'] != 0)
+    #(int(u)==0 or int(u)==6 or int(u)==7)
     edge_labels = dict([((u,v,),d['weight'])
-                     for (u,v,d) in G.edges(data=True) if  u == vert])
-    esmall=[(u,v) for (u,v,d) in G.edges(data=True) if u == vert]
+                     for (u,v,d) in G.edges(data=True) if (d['weight'] != 0)])
+    esmall=[(u,v) for (u,v,d) in G.edges(data=True) if (d['weight'] != 0)]
     val_map = {'0':(0,0,0),
                '1':(0.5,0.5,0.5),
                '2':(0,0,1),
@@ -313,16 +364,29 @@ def plotNetwork(show, save, test_file):
     if(show): 
         plt.show()
     if(save):
-        plt.savefig("from" + vert + test_file.replace(".txt",".png"), dpi = 500)
-
+        plt.savefig(test_file, dpi = 500)
+        #plt.savefig("from" + vert + test_file.replace(".txt",".png"), dpi = 500)
 
 init()
 
-file_path = 'C:\Users\Leif Christiansen\Documents\BlackBox\scripts\TestFiles'
+file_path = 'C:\Users\Leif Christiansen\Desktop\I501\BlackBox\Scripts\TestFiles'
 #test_file = '\BBTestQ2_1x1000_2015-10-02_15-43.txt'
 #file_name = file_path +  test_file 
 
 file_name = ''
+
+#tOD = []
+#print "Time of Death (TOD):"
+
+totalEdges = []
+for i in range(90):
+    totalEdges.append(0)
+
+fromXTrans = []
+for i in range(10):
+    fromXTrans.append([])
+    for j in range(10):
+        fromXTrans[i].append([])
 
 for file in os.listdir(file_path):
     for i in range(10):
@@ -330,7 +394,7 @@ for file in os.listdir(file_path):
         for j in range(10):
             mutCount[i].append(0)
     
-    if (file.endswith(".txt") and file.startswith("BBTestQ2")):
+    if (file.startswith("BBTestQ4")):
         current_mat = np.zeros((10, 10))
         prev_mat = np.zeros((10, 10))
         write_curr = 0
@@ -340,6 +404,7 @@ for file in os.listdir(file_path):
 
         file_name = file_path + "\\" + file
 
+        print
         print("Reading " + file_name)
 
         f = open(file_name, 'r')
@@ -347,10 +412,10 @@ for file in os.listdir(file_path):
         for i in range(90):
             edges.append(0)
 
-        obs = []
+        '''obs = []
         for i in range(10):
-            obs.append(0)
-
+            obs.append(0)'''
+            
         for i, line in enumerate(f): 
             clean_line = (line.replace(' ', '')).replace('\n', '')
             if ( i>= 10 and clean_line == '' ):#(i+1)%11 == 0):# and write_prev == write_curr -1):
@@ -368,6 +433,12 @@ for file in os.listdir(file_path):
                 #print i
                 #print prev_mat == current_mat
                 #print 'the induced changes between the current matrix and the previous one are: \n'
+                #Test if the matrix is all zeros
+                '''bool_mat1 = (current_mat == np.zeros((10,10)))
+                if (bool_mat1.all() == True):
+                    tOD.append(numStep)
+                    print numStep, ", ",
+                    break'''
                 bool_mat = (prev_mat == current_mat)
                 changes = zip(*np.where(bool_mat == False))
                 for k in changes:
@@ -384,11 +455,11 @@ for file in os.listdir(file_path):
                     #testHyp1(k)
 
                     #testHyp2(k)
-                    '''if( (int(prev_mat[k[0]][k[1]])%2) == 0 ):
+                    '''if( int(current_mat[k[0]][k[1]]) == 9 ):
                         print str(numStep) + ": ",
                         print int(prev_mat[k[0]][k[1]]), " changed to ", int(current_mat[k[0]][k[1]]),
-                        print "at row: " + str(k[0]) + " col: " + str(k[1])'''
-                    
+                        print "at row: " + str(k[0]) + " col: " + str(k[1])
+                        #printEdges(edges)'''
                     # and (int(current_mat[k[0]][k[1]]) != 9)
                     #testHyp3(k)
                     #if( (int(current_mat[k[0]][k[1]]) == 0) ):
@@ -396,33 +467,108 @@ for file in os.listdir(file_path):
                     #if( (k[0] < 2) or (k[0] > 7) or (k[1] < 3) or (k[1] > 6) ):
                         #if ( current_mat[k[0]][k[1]] == 1):
                             #printMats(k)
-                if (numStep == 0):
+                    testHyp4(k)
+                    '''total = 0
+                    for ele in edges:
+                        total += ele'''
+
+                    '''to0 = 0
+                    p = 0
                     for i in range(10):
-                        for j in range(10):
-                            obs[int(prev_mat[i][j])] += 1
+                        if (total == 0):
+                            total = 1
+                        if (i != j):
+                            to0 += edges[p] 
+                            p += 9'''
+                    #print 'Step: ' + str(numStep) + " to Black: ",
+                    #print ("%.2f" % (1.0*to0/total))
+                #if (numStep == 0):
+                 #   for i in range(10):
+                  #      for j in range(10):
+                   #         obs[int(prev_mat[i][j])] += 1
                 numStep = numStep + 1
+
         #print
 
-        totalChanges = 0
+        '''totalChanges = 0
         for i in range(len(edges)):
-            totalChanges = totalChanges + edges[i]
+            totalChanges = totalChanges + edges[i]'''
 
         #print "Total # of changes: " + str(totalChanges)
 
+        for i in range(len(edges)):
+            totalEdges[i] += edges[i]
+        
+        p = 0
+        for i in range(10):
+            for j in range(10):
+                if (j==i):
+                    continue
+                fromXTrans[i][j].append(edges[p])
+                p+=1
+        #printEdges(edges)
+        #printEdges(totalEdges)
+        #break
         '''for i in range(10):
             for j in range(10):
                 print mutCount[i][j],
             print '''
 
-        total = edges[18]+edges[21]+edges[23]+edges[25]
+        
+        #total = edges[18]+edges[21]+edges[23]+edges[25]
 
-        print "Init: ", obs
+        #print "Init: ", obs
 
-        print "2 -->"
+        #Print the transitions for even colors
+        '''print "2 -->"
         print "[0]: " + "%.2f" % (1.0*edges[18]/total),
         print "[4]: " + "%.2f" % (1.0*edges[21]/total),
         print "[6]: " + "%.2f" % (1.0*edges[23]/total),
         print "[8]: " + "%.2f" % (1.0*edges[25]/total)
-        print "Total: ", total
-        #plotNetwork(0, 1, file)
+        print "Total: ", total'''
+        #plotNetwork(1, 1, file, edges)
         
+
+#printEdges(totalEdges)
+
+# Convert edge list to percentages per color
+'''print "From transitions:"
+p=0
+for i in range(10):
+    sum = 0
+    for j in range(9):
+        sum += totalEdges[p]
+        p+=1
+    print str(sum) + " " + str(i) + " observed" 
+    p-=9
+    for j in range(9):
+        if (sum == 0): 
+            sum = 1
+        totalEdges[p] = totalEdges[p]*1.0/sum
+        p+=1
+
+#print
+printEdges(totalEdges)'''
+#printEdges(totalEdges)
+plotNetwork(1, 1, 'Q4Network', totalEdges)
+'''
+sum = 0
+for ele in tOD:
+    sum += ele
+print
+print "Average TOD ", sum/len(tOD)'''
+
+#print fromXTrans
+
+'''for i in range(len(fromXTrans)):
+    sum = 0
+    for j in range(len(fromXTrans[i])):
+        sum += fromXTrans[i][j]
+    for j in range(len(fromXTrans[i])):
+        fromXTrans[i][j] /= sum*1.0'''
+
+'''for i in range(10):
+    fig, ax = plt.subplots()
+    ax.boxplot(fromXTrans[i])
+    plt.setp(ax, xticklabels=[0,1,2,3,4,5,6,7,8,9])
+    plt.savefig("Q2from"+str(i)+"BP", dpi = 500)'''

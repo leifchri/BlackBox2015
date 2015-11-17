@@ -60,7 +60,8 @@ FYI the program clicks ~3.33 times a second or ~200 clicks per minute
 def main():
     nStep = input('Enter n: ')
     numReps = input('Enter the number of times to click Next n Step: ')
-    
+    trial = 0
+
     #Open the Black Box webpage
     driver = webdriver.Firefox()
     driver.get(BASE_URL)
@@ -69,18 +70,13 @@ def main():
     ele.send_keys(str(nStep))
     ele.send_keys(Keys.RETURN)
     
-    timestr = time.strftime("%Y%m%d-%H%M%S")
-
-    fq1 = open('BBTestQ1_' + str(nStep) + 'x' + str(numReps) + timestr + '.txt','w')
-    fq2 = open('BBTestQ2_' + str(nStep) + 'x' + str(numReps) + timestr + '.txt','w')
-    fq3 = open('BBTestQ3_' + str(nStep) + 'x' + str(numReps) + timestr + '.txt','w')
-    fq4 = open('BBTestQ4_' + str(nStep) + 'x' + str(numReps) + timestr + '.txt','w')
+    suffix = str(nStep) + 'x' + str(numReps + '_' + str(trial) + '.txt'
+    fq1 = open('Q1_' + suffix,'w')
+    fq2 = open('Q2_' + suffix,'w')
+    fq3 = open('Q3_' + suffix,'w')
+    fq4 = open('Q4_' + suffix,'w')
     fs = [fq1, fq2, fq3, fq4]
     
-    #freq_matrix = [[0 for j in xrange(10)] for j in xrange(numReps)]#initializes the frequency matrix colomns are fixed to 10 i.e. number of colors
-                                                                    #nrows are specified by # of repetitions.
-    
-    #with open('BBTestQ1_' + str(nStep) + 'x' + str(numReps) + '.txt','w') as fq1, open('BBTestQ2_' + str(nStep) + 'x' + str(numReps) + '.txt','w') as fq2:
     freq_mat = np.zeros((10, numReps))
             
     #Extract the color information for each cell in teh frame and write it to BBTest.txt
@@ -120,7 +116,7 @@ def main():
     freq_mat /= 100
     return freq_mat, numReps, nStep
 
-freq_matrix, numReps, nStep = main()
+#freq_matrix, numReps, nStep = main()
 f1 = open('frequency_mat.txt', 'w')
 for i in range(10):
     l=''
