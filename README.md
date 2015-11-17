@@ -9,7 +9,7 @@ File Descriptions
 ---------------------------------------------------
 ___Model___
 *****************************************************
-A partially functional model Black Box. Can be viewed here: http://cgi.soic.indiana.edu/~leifchri/labs/Class/blackBoxModel.html
+A partially functional model Black Box. Can be viewed here: http://cgi.soic.indiana.edu/~leifchri/WebGL/Class/blackBoxModel.html
 
 ___Scripts___
 ******************************************************
