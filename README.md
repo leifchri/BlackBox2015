@@ -25,7 +25,7 @@ Dependencies
 __Mozilla Firefox__
 
 __Python Libraries__:
-Numpy, Selenuim, Pandas, NetworkX, BeautifulSoup
+Numpy, Selenuim, Pandas, NetworkX, BeautifulSoup, Matplotlib
 
 If you are missing any of these libraries, in the terminal type:
 
