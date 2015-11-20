@@ -1,7 +1,7 @@
 # BlackBox2015
 Code from the Black Box project in I501 Fall 2015
 
-__Team members__: Leif Christiansen, Moses Stamboulian, Kyle Overton, Derrick Whitley
+__Team members__: Leif Christiansen, Moses Stamboulian, Kyle Overton, Derek Whitley
 
 The Black Box may be found here: http://www.informatics.indiana.edu/rocha/blackbox/BlackBox_N.php
 
